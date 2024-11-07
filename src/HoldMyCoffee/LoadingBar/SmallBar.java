@@ -56,13 +56,6 @@ public class SmallBar extends LoadingBar {
 
         bar.append("] % finished");
 
-        PrintStream output = System.out;
-        if (isFinalLoad()) {
-            finished = true;
-            output.print("\r" + bar + "\n\n");
-        } else {
-            output.print("\r" + bar);
-        }
-        output.flush();
+        printToStream(bar.toString());
     }
 }

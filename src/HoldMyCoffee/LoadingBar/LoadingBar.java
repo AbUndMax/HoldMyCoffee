@@ -1,5 +1,7 @@
 package HoldMyCoffee.LoadingBar;
 
+import java.io.PrintStream;
+
 /**
  * The LoadingBar class serves as an abstract base for creating different types of
  * loading bars that visually represent progress in the console. Subclasses must
@@ -68,5 +70,23 @@ public abstract class LoadingBar {
      */
     protected boolean isFinalLoad() {
         return progress == total;
+    }
+
+    /**
+     * Prints the loading bar to the console using a specified string representation.
+     * The method updates the console output to reflect the current loading state.
+     * It marks the loading as finished if the loading process is complete.
+     *
+     * @param bar the string representation of the loading bar to be printed to the console
+     */
+    protected void printToStream(String bar) {
+        PrintStream output = System.out;
+        if (isFinalLoad()) {
+            finished = true;
+            output.print("\r" + bar + "\n\n");
+        } else {
+            output.print("\r" + bar);
+        }
+        output.flush();
     }
 }
