@@ -34,7 +34,7 @@ public class Counter extends LoadingBar {
      */
     @Override
     protected void printBar() {
-        printToStream(generateBarString(barStart, total, progress, "]"));
+        printToStream(generateBarString(barStart + " ", total, progress, " ]"));
     }
 
     /**

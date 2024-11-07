@@ -41,7 +41,7 @@ public class SmallBar extends LoadingBar {
      */
     @Override
     protected void printBar() {
-        String bar = generateBarString(barStart, calculatePercentage(), "] % finished");
+        String bar = generateBarString(barStart, calculatePercentage(), " ] % finished");
         printToStream(bar);
     }
 
