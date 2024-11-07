@@ -1,13 +1,20 @@
 package HoldMyCoffee.LoadingBar;
 
-import java.io.PrintStream;
-
 /**
  * The SmallBar class extends the LoadingBar class and provides a visual representation
  * of a loading progress bar in the console. It updates the progress bar in place,
  * displaying the current percentage of completion.
  */
 public class SmallBar extends LoadingBar {
+
+    /**
+     * Constructs a SmallBar instance with the specified total iterations.
+     *
+     * @param totalIterations the total number of iterations for the loading process
+     */
+    public SmallBar(int totalIterations) {
+        super(totalIterations);
+    }
 
     /**
      * Creates a new SmallBar object with the specified total iterations and description.
@@ -34,8 +41,20 @@ public class SmallBar extends LoadingBar {
      */
     @Override
     protected void printBar() {
+        String bar = generateBarString(barStart, calculatePercentage(), "] % finished");
+        printToStream(bar);
+    }
 
-        int currentPercent = calculatePercentage();
+    /**
+     * Generates a formatted string representation of a progress bar with specified start and end segments,
+     * based on the current percentage of completion.
+     *
+     * @param barStart the initial part of the bar string, generally a description or initial delimiter
+     * @param currentPercent the current percentage of completion, determining the progress displayed in the bar
+     * @param barEnd the concluding part of the bar string, often additional information or closing delimiter
+     * @return a formatted string representing the progress bar with current completion percentage
+     */
+    protected static String generateBarString(String barStart, int currentPercent, String barEnd) {
 
         StringBuilder bar = new StringBuilder(barStart);
         int repetitions = Math.min(currentPercent / 10, 9);
@@ -54,8 +73,8 @@ public class SmallBar extends LoadingBar {
             bar.append(" ");
         }
 
-        bar.append("] % finished");
+        bar.append(barEnd);
 
-        printToStream(bar.toString());
+        return bar.toString();
     }
 }

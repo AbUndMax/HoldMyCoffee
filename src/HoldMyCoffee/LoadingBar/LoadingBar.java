@@ -14,6 +14,15 @@ public abstract class LoadingBar {
     protected int progress = 0;
 
     /**
+     * Constructs a LoadingBar instance with the specified total iterations.
+     *
+     * @param totalIterations the total number of iterations for the loading process
+     */
+    public LoadingBar(int totalIterations) {
+        this(totalIterations, "Loading");
+    }
+
+    /**
      * Constructs a LoadingBar instance with the specified total iterations and description.
      *
      * @param totalIterations the total number of iterations for the loading process
