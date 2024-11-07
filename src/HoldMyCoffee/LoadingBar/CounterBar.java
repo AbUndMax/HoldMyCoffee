@@ -38,7 +38,6 @@ public class CounterBar extends LoadingBar {
      */
     @Override
     protected void printBar() {
-
         String bar = SmallBar.generateBarString(barStart, calculatePercentage(), "") + "% |" +
                 Counter.generateBarString(" ", total, progress, " ]");
 

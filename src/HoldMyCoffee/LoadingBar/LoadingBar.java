@@ -78,7 +78,7 @@ public abstract class LoadingBar {
      * @return true if the current progress equals the total iterations; false otherwise.
      */
     protected boolean isFinalLoad() {
-        return progress == total;
+        return progress >= total;
     }
 
     /**
