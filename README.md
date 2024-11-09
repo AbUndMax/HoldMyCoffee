@@ -6,6 +6,45 @@
 # HoldMyCoffee
 Loading animation library for CLI tools written in Java
 
+## Included Animation Exmaples:
+### Throbbers:
+
+#### WheelThrobber
+<div style="text-align: center;">
+  <img src="animations/WheelThrobber.gif" alt="WheelThrobber.gif">
+</div>
+
+#### DotThrobber
+<div style="text-align: center;">
+  <img src="animations/DotThrobber.gif" alt="DotThrobber.gif">
+</div>
+
+#### TimeThrobber
+<div style="text-align: center;">
+  <img src="animations/TimeThrobber.gif" alt="TimeThrobber.gif">
+</div>
+
+### LoadingBars:
+#### SmallBar
+<div style="text-align: center;">
+  <img src="animations/SmallBar.gif" alt="SmallBar2.gif">
+</div>
+
+#### LongBar
+<div style="text-align: center;">
+  <img src="animations/LongBar.gif" alt="LongBar.gif">
+</div>
+
+#### Counter
+<div style="text-align: center;">
+  <img src="animations/Counter.gif" alt="Counter.gif">
+</div>
+
+#### CounterBar
+<div style="text-align: center;">
+  <img src="animations/CounterBar.gif" alt="CounterBar.gif">
+</div>
+
 ## Throbber
 The abstract Throbber Class provides different child classes (`WheelThrobber`, `DotThrobber`, `TimeThrobber`) 
 with each implementing a different throbber animation.
@@ -39,23 +78,6 @@ public static void main(String[] args) {
     throbber.stop(); // end the animation
 }
 ```
-
-### Animation Examples for Throbbers:
-
-#### WheelThrobber
-<div style="text-align: center;">
-  <img src="animations/WheelThrobber.gif" alt="WheelThrobber.gif">
-</div>
-
-#### DotThrobber
-<div style="text-align: center;">
-  <img src="animations/DotThrobber.gif" alt="DotThrobber.gif">
-</div>
-
-#### TimeThrobber
-<div style="text-align: center;">
-  <img src="animations/TimeThrobber.gif" alt="TimeThrobber.gif">
-</div>
 
 ## LoadingBar:
 The abstract LoadingBar class follows the logic of the Throbbers.
@@ -94,25 +116,4 @@ public static void main(String[] args) {
     }
 }
 ```
-
-### Animation Examples for LoadingBars:
-#### SmallBar
-<div style="text-align: center;">
-  <img src="animations/SmallBar.gif" alt="SmallBar2.gif">
-</div>
-
-#### LongBar
-<div style="text-align: center;">
-  <img src="animations/LongBar.gif" alt="LongBar.gif">
-</div>
-
-#### Counter
-<div style="text-align: center;">
-  <img src="animations/Counter.gif" alt="Counter.gif">
-</div>
-
-#### CounterBar
-<div style="text-align: center;">
-  <img src="animations/CounterBar.gif" alt="CounterBar.gif">
-</div>
 
