@@ -98,4 +98,14 @@ public abstract class LoadingBar {
         }
         output.flush();
     }
+
+    /**
+     * Resets the loading bar progress and marks it as not finished.
+     * This method sets the current progress back to zero, which makes
+     * the same LoadingBar instance reusable. (description & total stays the same!)
+     */
+    public void resetBar() {
+        progress = 0;
+        finished = false;
+    }
 }

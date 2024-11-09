@@ -36,12 +36,10 @@ public class LongBar extends LoadingBar {
 
         int currentPercent = calculatePercentage();
 
-        StringBuilder bar = new StringBuilder(barStart);
-        bar.append(" ");
-        bar.append(String.format("%-100s", "#".repeat(progress)));
-        bar.append(" | ").append(String.format("%3d", currentPercent)).append("%");
-        bar.append(" ]");
+        String bar = barStart + " " +
+                String.format("%-100s", "#".repeat(currentPercent)) +
+                " | " + String.format("%3d", currentPercent) + "% ]";
 
-        printToStream(bar.toString());
+        printToStream(bar);
     }
 }

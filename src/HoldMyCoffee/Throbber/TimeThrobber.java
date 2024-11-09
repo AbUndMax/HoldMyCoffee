@@ -44,6 +44,7 @@ public class TimeThrobber extends Throbber {
      * @param i the current loop number in the animation function
      * @return the formatted string representing the current progress of time in mm:ss format
      */
+    @Override
     protected String outputString(int i) {
         String second = seconds[i % seconds.length];
         String minutes = String.format("%02d", i / 60);
@@ -65,7 +66,7 @@ public class TimeThrobber extends Throbber {
      * Retrieves the timeout interval used for determining the delay between frames
      * in the loading animation.
      *
-     * @return the timeout interval in milliseconds
+     * @return the timeout interval of exactly one second.
      */
     @Override
     protected long getTimeout() {
