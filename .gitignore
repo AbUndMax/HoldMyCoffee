@@ -13,6 +13,7 @@
 out/
 test/
 lib/
+doc/
 
 # Maven and Gradle directories
 target/
