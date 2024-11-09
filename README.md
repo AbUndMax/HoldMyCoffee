@@ -10,40 +10,26 @@ Loading animation library for CLI tools written in Java
 ### Throbbers:
 
 #### WheelThrobber
-<div style="text-align: center;">
-  <img src="animations/WheelThrobber.gif" alt="WheelThrobber.gif">
-</div>
+![WheelThrobber.gif](animations/WheelThrobber.gif)
 
 #### DotThrobber
-<div style="text-align: center;">
-  <img src="animations/DotThrobber.gif" alt="DotThrobber.gif">
-</div>
+![DotThrobber.gif](animations/DotThrobber.gif)
 
 #### TimeThrobber
-<div style="text-align: center;">
-  <img src="animations/TimeThrobber.gif" alt="TimeThrobber.gif">
-</div>
+![TimeThrobber.gif](animations/TimeThrobber.gif)
 
 ### LoadingBars:
 #### SmallBar
-<div style="text-align: center;">
-  <img src="animations/SmallBar.gif" alt="SmallBar2.gif">
-</div>
+![SmallBar.gif](animations/SmallBar.gif)
 
 #### LongBar
-<div style="text-align: center;">
-  <img src="animations/LongBar.gif" alt="LongBar.gif">
-</div>
+![LongBar.gif](animations/LongBar.gif)
 
 #### Counter
-<div style="text-align: center;">
-  <img src="animations/Counter.gif" alt="Counter.gif">
-</div>
+![Counter.gif](animations/Counter.gif)
 
 #### CounterBar
-<div style="text-align: center;">
-  <img src="animations/CounterBar.gif" alt="CounterBar.gif">
-</div>
+![CounterBar.gif](animations/CounterBar.gif)
 
 ## Throbber
 The abstract Throbber Class provides different child classes (`WheelThrobber`, `DotThrobber`, `TimeThrobber`) 

@@ -12,6 +12,7 @@
 *.iml
 out/
 test/
+lib/
 
 # Maven and Gradle directories
 target/
