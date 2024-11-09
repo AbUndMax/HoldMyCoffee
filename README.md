@@ -1,4 +1,4 @@
-[![GitHub](https://img.shields.io/badge/GitHub-HoldMyCoffee+-b07219?logo=github)](https://github.com/AbUndMax/HoldMyCoffee)
+[![GitHub](https://img.shields.io/badge/GitHub-HoldMyCoffee-b07219?logo=github)](https://github.com/AbUndMax/HoldMyCoffee)
 [![Java](https://img.shields.io/badge/Java-11+-b07219)](https://openjdk.org/projects/jdk/11/)
 [![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-blue)](https://github.com/AbUndMax/HoldMyCoffee/blob/main/LICENSE.md)
 [![Badge](https://img.shields.io/github/v/release/AbUndMax/HoldMyCoffee?color=brightgreen)](https://github.com/AbUndMax/HoldMyCoffee/releases/latest)
@@ -94,7 +94,7 @@ import HoldMyCoffee.LoadingBar.LoadingBar;
 
 public static void main(String[] args) {
     int total = 456;
-    LoadingBar loadingBar = new LoadingBar(total, "Loading");
+    LoadingBar loadingBar = new SmallBar(total, "Loading");
 
     for (int i = 0; i <= total; i++) {
         // put the process and computations on i here
